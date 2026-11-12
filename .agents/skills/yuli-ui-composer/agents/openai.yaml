@@ -1,0 +1,6 @@
+interface:
+  display_name: "Yuli UI 组件复用"
+  short_description: "检索 Yuli 设计资产，通过真实 MCP 读取组件，并生成遵循品牌规范的页面"
+  default_prompt: "使用 $yuli-ui-composer，先检索并读取已有组件，再生成符合 Yuli 品牌规范的页面。"
+policy:
+  allow_implicit_invocation: true

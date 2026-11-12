@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "metric-grid",
+  "title": "指标卡组",
+  "description": "用三列指标快速呈现关键数据。 指标 数据 统计 看板 概览 metric dashboard",
+  "registryDependencies": [
+    "@yuli/theme",
+    "@yuli/card"
+  ],
+  "files": [
+    {
+      "path": "src/components/brand/metric-grid.tsx",
+      "content": "import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'\nexport function MetricGrid({items=[{label:'进行中的项目',value:'12',note:'示例数据 · 本月'},{label:'待审核资产',value:'08',note:'示例数据 · 需要关注'},{label:'已发布组件',value:'24',note:'示例数据 · 资产总览'}]}:{items?:{label:string;value:string;note:string}[]}){\n  return <section aria-label=\"关键指标\" className=\"grid gap-4 sm:grid-cols-3\">{items.map(i=><Card key={i.label}><CardHeader><CardDescription>{i.label}</CardDescription><CardTitle className=\"text-3xl tabular-nums\">{i.value}</CardTitle></CardHeader><CardContent><p className=\"text-xs text-muted-foreground\">{i.note}</p></CardContent></Card>)}</section>\n}\n",
+      "type": "registry:component",
+      "target": "components/brand/metric-grid.tsx"
+    }
+  ],
+  "meta": {
+    "version": "0.1.0",
+    "owner": "Yuli UI",
+    "status": "demo",
+    "keywords": [
+      "指标",
+      "数据",
+      "统计",
+      "看板",
+      "概览",
+      "metric",
+      "dashboard"
+    ]
+  },
+  "type": "registry:block"
+}

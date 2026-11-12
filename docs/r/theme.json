@@ -1,0 +1,50 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme",
+  "title": "Yuli 品牌主题",
+  "description": "由 src/index.css 的品牌变量生成，供业务组件安装时共享。",
+  "registryDependencies": [],
+  "files": [],
+  "cssVars": {
+    "theme": {
+      "radius-sm": "calc(var(--radius) - 4px)",
+      "radius-md": "calc(var(--radius) - 2px)",
+      "radius-lg": "var(--radius)",
+      "radius-xl": "calc(var(--radius) + 4px)"
+    },
+    "light": {
+      "background": "#f7f8fa",
+      "foreground": "#242830",
+      "card": "#fff",
+      "primary": "#3455d1",
+      "primary-foreground": "#fff",
+      "secondary": "#edf0f7",
+      "muted": "#f0f2f5",
+      "muted-foreground": "#737b89",
+      "accent": "#eef1fb",
+      "destructive": "#bf3d36",
+      "border": "#e4e7ec",
+      "radius": "0.75rem",
+      "success": "#36856b",
+      "sidebar-bg": "#fdfdfc",
+      "card-foreground": "#242830",
+      "popover": "#fff",
+      "popover-foreground": "#242830",
+      "secondary-foreground": "#242830",
+      "accent-foreground": "#242830",
+      "input": "#e4e7ec",
+      "ring": "#3455d1"
+    }
+  },
+  "meta": {
+    "version": "0.1.0",
+    "owner": "Yuli UI",
+    "status": "demo",
+    "keywords": [
+      "主题",
+      "品牌",
+      "theme"
+    ]
+  },
+  "type": "registry:theme"
+}

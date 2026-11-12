@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist-public/
+.local/
+.codex/
+.cursor/
+.env*
+*.tsbuildinfo
+.DS_Store

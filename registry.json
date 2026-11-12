@@ -1,0 +1,431 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "yuli",
+  "homepage": "http://127.0.0.1:5173",
+  "items": [
+    {
+      "name": "page-header",
+      "type": "registry:block",
+      "title": "品牌页头",
+      "description": "页面标题与上下文，统一信息层级。 标题 页头 概览 header dashboard",
+      "registryDependencies": [
+        "@yuli/theme",
+        "@yuli/badge"
+      ],
+      "files": [
+        {
+          "path": "src/components/brand/page-header.tsx",
+          "type": "registry:component",
+          "target": "components/brand/page-header.tsx"
+        }
+      ],
+      "meta": {
+        "version": "0.1.0",
+        "owner": "Yuli UI",
+        "status": "demo",
+        "keywords": [
+          "标题",
+          "页头",
+          "概览",
+          "header",
+          "dashboard"
+        ]
+      }
+    },
+    {
+      "name": "metric-grid",
+      "type": "registry:block",
+      "title": "指标卡组",
+      "description": "用三列指标快速呈现关键数据。 指标 数据 统计 看板 概览 metric dashboard",
+      "registryDependencies": [
+        "@yuli/theme",
+        "@yuli/card"
+      ],
+      "files": [
+        {
+          "path": "src/components/brand/metric-grid.tsx",
+          "type": "registry:component",
+          "target": "components/brand/metric-grid.tsx"
+        }
+      ],
+      "meta": {
+        "version": "0.1.0",
+        "owner": "Yuli UI",
+        "status": "demo",
+        "keywords": [
+          "指标",
+          "数据",
+          "统计",
+          "看板",
+          "概览",
+          "metric",
+          "dashboard"
+        ]
+      }
+    },
+    {
+      "name": "project-table",
+      "type": "registry:block",
+      "title": "项目表格",
+      "description": "含搜索、状态和空结果反馈的项目清单。 项目 表格 列表 搜索 table project",
+      "registryDependencies": [
+        "@yuli/theme",
+        "@yuli/card",
+        "@yuli/table",
+        "@yuli/badge",
+        "@yuli/input"
+      ],
+      "files": [
+        {
+          "path": "src/components/brand/project-table.tsx",
+          "type": "registry:component",
+          "target": "components/brand/project-table.tsx"
+        }
+      ],
+      "meta": {
+        "version": "0.1.0",
+        "owner": "Yuli UI",
+        "status": "demo",
+        "keywords": [
+          "项目",
+          "表格",
+          "列表",
+          "搜索",
+          "table",
+          "project"
+        ]
+      }
+    },
+    {
+      "name": "action-panel",
+      "type": "registry:block",
+      "title": "交付检查面板",
+      "description": "让规范检查有明确动作与反馈。 检查 规范 交付 审核 清单 check",
+      "registryDependencies": [
+        "@yuli/theme",
+        "@yuli/card",
+        "@yuli/button"
+      ],
+      "files": [
+        {
+          "path": "src/components/brand/action-panel.tsx",
+          "type": "registry:component",
+          "target": "components/brand/action-panel.tsx"
+        }
+      ],
+      "meta": {
+        "version": "0.1.0",
+        "owner": "Yuli UI",
+        "status": "demo",
+        "keywords": [
+          "检查",
+          "规范",
+          "交付",
+          "审核",
+          "清单",
+          "check"
+        ]
+      }
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Yuli button",
+      "description": "从官方 shadcn/ui 拉取并统一到本地工具导入路径的 button 基础组件。",
+      "dependencies": [
+        "radix-ui",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@yuli/utils",
+        "@yuli/theme"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "version": "0.1.0",
+        "owner": "Yuli UI / shadcn",
+        "status": "demo",
+        "keywords": [
+          "button"
+        ]
+      }
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Yuli card",
+      "description": "从官方 shadcn/ui 拉取并统一到本地工具导入路径的 card 基础组件。",
+      "dependencies": [
+        "radix-ui",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@yuli/utils",
+        "@yuli/theme"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "version": "0.1.0",
+        "owner": "Yuli UI / shadcn",
+        "status": "demo",
+        "keywords": [
+          "card"
+        ]
+      }
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Yuli badge",
+      "description": "从官方 shadcn/ui 拉取并统一到本地工具导入路径的 badge 基础组件。",
+      "dependencies": [
+        "radix-ui",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@yuli/utils",
+        "@yuli/theme"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/badge.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "version": "0.1.0",
+        "owner": "Yuli UI / shadcn",
+        "status": "demo",
+        "keywords": [
+          "badge"
+        ]
+      }
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Yuli input",
+      "description": "从官方 shadcn/ui 拉取并统一到本地工具导入路径的 input 基础组件。",
+      "dependencies": [
+        "radix-ui",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@yuli/utils",
+        "@yuli/theme"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "version": "0.1.0",
+        "owner": "Yuli UI / shadcn",
+        "status": "demo",
+        "keywords": [
+          "input"
+        ]
+      }
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Yuli textarea",
+      "description": "从官方 shadcn/ui 拉取并统一到本地工具导入路径的 textarea 基础组件。",
+      "dependencies": [
+        "radix-ui",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@yuli/utils",
+        "@yuli/theme"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "version": "0.1.0",
+        "owner": "Yuli UI / shadcn",
+        "status": "demo",
+        "keywords": [
+          "textarea"
+        ]
+      }
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Yuli table",
+      "description": "从官方 shadcn/ui 拉取并统一到本地工具导入路径的 table 基础组件。",
+      "dependencies": [
+        "radix-ui",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@yuli/utils",
+        "@yuli/theme"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/table.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "version": "0.1.0",
+        "owner": "Yuli UI / shadcn",
+        "status": "demo",
+        "keywords": [
+          "table"
+        ]
+      }
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Yuli tabs",
+      "description": "从官方 shadcn/ui 拉取并统一到本地工具导入路径的 tabs 基础组件。",
+      "dependencies": [
+        "radix-ui",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@yuli/utils",
+        "@yuli/theme"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "version": "0.1.0",
+        "owner": "Yuli UI / shadcn",
+        "status": "demo",
+        "keywords": [
+          "tabs"
+        ]
+      }
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Yuli separator",
+      "description": "从官方 shadcn/ui 拉取并统一到本地工具导入路径的 separator 基础组件。",
+      "dependencies": [
+        "radix-ui",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@yuli/utils",
+        "@yuli/theme"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/separator.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "version": "0.1.0",
+        "owner": "Yuli UI / shadcn",
+        "status": "demo",
+        "keywords": [
+          "separator"
+        ]
+      }
+    },
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "样式合并工具",
+      "description": "共享 cn 工具，统一私有组件的样式合并入口。",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib",
+          "target": "lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "version": "0.1.0",
+        "owner": "Yuli UI",
+        "status": "demo",
+        "keywords": [
+          "cn",
+          "utils"
+        ]
+      }
+    },
+    {
+      "name": "theme",
+      "type": "registry:theme",
+      "title": "Yuli 品牌主题",
+      "description": "由 src/index.css 的品牌变量生成，供业务组件安装时共享。",
+      "registryDependencies": [],
+      "files": [],
+      "cssVars": {
+        "light": {
+          "background": "#f7f8fa",
+          "foreground": "#242830",
+          "card": "#fff",
+          "primary": "#3455d1",
+          "primary-foreground": "#fff",
+          "secondary": "#edf0f7",
+          "muted": "#f0f2f5",
+          "muted-foreground": "#737b89",
+          "accent": "#eef1fb",
+          "destructive": "#bf3d36",
+          "border": "#e4e7ec",
+          "radius": "0.75rem",
+          "success": "#36856b",
+          "sidebar-bg": "#fdfdfc",
+          "card-foreground": "#242830",
+          "popover": "#fff",
+          "popover-foreground": "#242830",
+          "secondary-foreground": "#242830",
+          "accent-foreground": "#242830",
+          "input": "#e4e7ec",
+          "ring": "#3455d1"
+        },
+        "theme": {
+          "radius-sm": "calc(var(--radius) - 4px)",
+          "radius-md": "calc(var(--radius) - 2px)",
+          "radius-lg": "var(--radius)",
+          "radius-xl": "calc(var(--radius) + 4px)"
+        }
+      },
+      "meta": {
+        "version": "0.1.0",
+        "owner": "Yuli UI",
+        "status": "demo",
+        "keywords": [
+          "主题",
+          "品牌",
+          "theme"
+        ]
+      }
+    }
+  ]
+}

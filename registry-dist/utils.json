@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "utils",
+  "title": "样式合并工具",
+  "description": "共享 cn 工具，统一私有组件的样式合并入口。",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { clsx, type ClassValue } from 'clsx'\nimport { twMerge } from 'tailwind-merge'\nexport function cn(...inputs: ClassValue[]) { return twMerge(clsx(inputs)) }\n",
+      "type": "registry:lib",
+      "target": "lib/utils.ts"
+    }
+  ],
+  "meta": {
+    "version": "0.1.0",
+    "owner": "Yuli UI",
+    "status": "demo",
+    "keywords": [
+      "cn",
+      "utils"
+    ]
+  },
+  "type": "registry:lib"
+}
